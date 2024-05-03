@@ -7,7 +7,7 @@
   background-color: #fff;
 }
 .con-content-block .conBg {
-  padding-top: 8rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
   position: relative;
 }
@@ -52,7 +52,8 @@
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 768px) {
-  .con-content-block .conWhy .conText .conTitle .title {
+  .con-content-block .conWhy .conText h1,
+  .con-content-block .conWhy .conText h2 {
     font-size: 3.5rem;
   }
 

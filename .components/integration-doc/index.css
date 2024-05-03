@@ -7,8 +7,7 @@
   background: #fff;
 }
 .con-integration-doc .conBg {
-  padding-top: 8rem;
-  padding-bottom: 4rem;
+  padding: 4rem 0;
   position: relative;
 }
 .con-integration-doc .conBg::before {
@@ -58,18 +57,26 @@
   line-height: 1.2;
   position: relative;
 }
-.con-integration-doc .conWhy .conText .conTitle .starIllus {
-  position: absolute;
-  aspect-ratio: 0.4;
-  width: 60px;
-  right: -2rem;
-  top: -5rem;
+
+.con-integration-doc .conWhy .conText .conBtn {
+  display: flex;
+  justify-content: center;
+}
+.con-integration-doc .conWhy .conText .btn {
+  background-color: #7567ff;
+  color: white;
+  padding: 1.2rem 3.2rem;
+  border: none;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 4rem;
+  margin-top: 2rem;
 }
 .con-integration-doc .conWhy .conText .desc {
   font-size: 1rem;
   max-width: 858px;
   line-height: 1.3;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 @media screen and (min-width: 480px) {
 }

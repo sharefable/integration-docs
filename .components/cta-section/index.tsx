@@ -18,7 +18,7 @@ const CTASection = (props) => {
             </div>
           </div>
           <div className="conRight">
-            <a url={props.url} style={{ cursor: "pointer" }} className="btn">
+            <a href={props.url} style={{ cursor: "pointer" }} className="btn">
               {props.buttonText}
             </a>
           </div>

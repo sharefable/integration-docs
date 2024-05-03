@@ -32,7 +32,7 @@ const Header = (props) => {
     <>
       <div
         style={{
-          backgroundColor: "#fbf6ff",
+          backgroundColor: "#fff",
           position: "sticky",
           top: "0",
           zIndex: "12",

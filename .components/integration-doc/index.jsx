@@ -11,7 +11,11 @@ const IntegrationDoc = (props) => {
               <h2 className="title">{props.heading}</h2>
             </div>
             <p className="desc">{props.desc}</p>
-            <a href="#">See documentation</a>
+            <div className="conBtn">
+              <a className="btn" href="#">
+                See documentation
+              </a>
+            </div>
           </div>
           <div className="con-img">
             <img src={props.img} alt="integration-doc" />

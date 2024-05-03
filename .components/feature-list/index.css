@@ -6,7 +6,7 @@
   max-width: calc(1500px - 10rem);
   margin: 0 auto;
   padding: 1rem 0;
-  padding-bottom: 4rem;
+  padding-bottom: 1rem;
 }
 .con-carousel .conCards .cards {
   z-index: 1;
