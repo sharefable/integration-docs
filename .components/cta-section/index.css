@@ -1,0 +1,123 @@
+.cta-section {
+  border-bottom-left-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+  margin-top: 3rem;
+}
+
+.cta-section .con-cta {
+  margin-top: 0;
+  padding: 8rem 2rem;
+  position: relative;
+  margin-bottom: 0;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 3rem;
+  z-index: 2;
+}
+
+.cta-section .conCTA {
+  margin: 0 auto;
+  max-width: calc(1500px - 10rem);
+  padding: 0;
+  position: relative;
+  display: flex;
+  border: 6px solid #1500e0;
+  border-radius: 3rem;
+  display: flex;
+  background-color: #fbf6ff;
+
+  .conLeft {
+    flex: 0.6;
+    border: 6px solid #fedf64;
+    border-radius: 3rem;
+    height: 100%;
+    margin: -6px;
+    padding: 4rem 4rem;
+    background-color: white;
+
+    .conText {
+      .title {
+        font-size: 3.5rem;
+        color: #16023e;
+        font-weight: 500;
+        line-height: 1.2;
+      }
+
+      .desc {
+        font-size: 1.25rem;
+        margin-top: 2rem;
+        line-height: 1.4;
+        color: #16023e;
+      }
+    }
+  }
+
+  .conRight {
+    padding: 4rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("https://www.sharefable.com/bg-image/bg-spiral-cta.svg");
+    background-repeat: no-repeat;
+    background-position-y: -2rem;
+    background-position-x: -4rem;
+    background-size: cover;
+    flex: 0.4;
+
+    .btn {
+      background-color: #7567ff;
+      color: white;
+      padding: 1.2rem 3.2rem;
+      border: none;
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 4rem;
+    }
+  }
+}
+
+.conRight .form {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.conRight .form-input {
+  position: relative;
+  margin-bottom: 15px;
+}
+.conRight .form-input input {
+  display: block;
+  width: 100%;
+  background: transparent;
+  border: solid 1px #16023e;
+  transition: all 0.3s ease;
+  padding: 14px 15px;
+  border-radius: 4px;
+}
+.conRight .form-input input:focus {
+  border-color: blue;
+}
+.conRight .form-input label {
+  position: absolute;
+  cursor: text;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  background: transparent;
+  padding: 2px 8px;
+  color: #999;
+  background-color: #fbf6ff;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.form-input input:focus + label,
+.form-input input:not(:placeholder-shown) + label {
+  font-size: 11px;
+  top: -4px;
+}
+.form-input input:focus + label {
+  color: blue;
+}

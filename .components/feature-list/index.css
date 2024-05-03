@@ -1,0 +1,158 @@
+.con-carousel {
+  background-color: #fff;
+  padding: 2rem 1rem;
+}
+.con-carousel .conCards {
+  max-width: calc(1500px - 10rem);
+  margin: 0 auto;
+  padding: 1rem 0;
+  padding-bottom: 1rem;
+}
+.con-carousel .conCards .cards {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+.con-carousel .conCards .cards .navigate-con {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  gap: 0.6rem;
+}
+
+.con-carousel .conCards .cards .navigate-con .navigate-circles {
+  width: 0.4rem;
+  aspect-ratio: 1 / 1;
+  border-radius: 2rem;
+  background-color: #d0d0ff;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.3s;
+}
+
+.con-carousel .conCards .cards .navigate-con .navigate-circles.active {
+  transform: scale(1.2);
+  background-color: #16023e;
+}
+
+.con-carousel .conCards .cards .navigate-btn {
+  background-color: #d0d0ff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  z-index: 2;
+}
+.con-carousel .con-highlight {
+  margin: 0 auto;
+  max-width: calc(1500px - 10rem);
+  padding: 0;
+  position: relative;
+}
+.con-carousel .con-highlight .conText {
+  text-align: center;
+}
+.con-carousel .con-highlight .conText .conTitle {
+  position: relative;
+}
+.con-carousel .con-highlight .conText .conTitle .title {
+  font-size: 2.25rem;
+  font-weight: 500;
+  line-height: 1.2;
+  position: relative;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.con-carousel .con-highlight .conText .conTitle .starIllus {
+  position: absolute;
+  aspect-ratio: 0.4;
+  width: 60px;
+  right: -1rem;
+  top: 2rem;
+}
+.con-carousel .con-highlight .conText .conTitle .starIllus img {
+  width: 100%;
+  object-fit: contain;
+}
+.con-carousel .left {
+  left: 0;
+}
+
+.con-carousel .left img {
+  width: 1rem;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+
+.con-carousel .right {
+  right: 0;
+}
+
+.con-carousel .right img {
+  transform: rotate(180deg);
+  width: 1rem;
+  object-fit: contain;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 480px) {
+}
+@media screen and (min-width: 576px) {
+  .con-carousel .con-highlight .conText .conTitle .title {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .con-carousel .con-highlight .conText .conTitle .title {
+    font-size: 3.5rem;
+  }
+  .con-carousel .left img {
+    width: 1.4rem;
+  }
+
+  .con-carousel .right img {
+    transform: rotate(180deg);
+    width: 1.4rem;
+  }
+  .con-carousel .conCards .cards .navigate-btn {
+    width: 3rem;
+    height: 3rem;
+  }
+  .con-carousel .conCards .cards .navigate-con .navigate-circles {
+    width: 0.6rem;
+  }
+  .con-carousel .con-highlight .conText .conTitle .starIllus {
+    position: absolute;
+    aspect-ratio: 0.4;
+    width: 60px;
+    right: 1rem;
+    top: -2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1024px) {
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1400px) {
+}
