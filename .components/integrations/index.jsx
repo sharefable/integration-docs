@@ -19,7 +19,7 @@ const CompaniesLogo = [
   },
   {
     id: 4,
-    src: "https://www.sharefable.com/logo/outreact.svg",
+    src: "https://www.sharefable.com/logo/outreach.svg",
     altText: "Fable",
   },
   {
