@@ -14,12 +14,12 @@ const CompaniesLogo = [
   },
   {
     id: 3,
-    src: "https://www.sharefable.com/logo/ga-white-bg-logo.svg",
+    src: "https://www.sharefable.com/logo/mailchimp.svg",
     altText: "Fable",
   },
   {
     id: 4,
-    src: "https://www.sharefable.com/logo/marketo-white-bg-logo.svg",
+    src: "https://www.sharefable.com/logo/outreact.svg",
     altText: "Fable",
   },
   {
@@ -34,7 +34,7 @@ const CompaniesLogo = [
   },
   {
     id: 7,
-    src: "https://www.sharefable.com/logo/segment-white-bg-logo.svg",
+    src: "https://www.sharefable.com/logo/pipedrive.svg",
     altText: "Fable",
   },
 ];
