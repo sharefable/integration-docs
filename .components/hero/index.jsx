@@ -18,21 +18,23 @@ const Hero = (props) => {
           </div>
         </div>
         <p className={"container__hero-desc"}>{props.desc}</p>
-        <div
-          style={{
-            display: "flex",
-            gap: "1rem",
-            marginTop: "2rem",
-          }}
-        >
-          <a
-            style={{ color: "white" }}
-            className={"container__hero-button"}
-            href={props.button.url}
+        {props?.button?.url && (
+          <div
+            style={{
+              display: "flex",
+              gap: "1rem",
+              marginTop: "2rem",
+            }}
           >
-            {props.button.label}
-          </a>
-        </div>
+            <a
+              style={{ color: "white" }}
+              className={"container__hero-button"}
+              href={props.button.url}
+            >
+              {props.button.label}
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
