@@ -57,15 +57,19 @@
   margin-top: 1.5rem;
   padding: 0.8rem 2.6rem;
   text-decoration: none;
-  background-color: #7567ff;
+  color: #7567ff;
   border-radius: 2.6rem;
   font-weight: 500;
   cursor: pointer;
-  color: white;
+  border: 2px solid #7567ff;
+  transition:
+    background-color 0.2s,
+    color 0.2s;
 }
 
 .con-card-carousel__card-text-link:hover {
   background-color: #7567ff;
+  color: white;
 }
 @media screen and (min-width: 480px) {
   .con-card-carousel__card-img {

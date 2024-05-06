@@ -42,11 +42,20 @@
   position: relative;
 }
 .con-content-block .conWhy .conText p {
-  font-size: 1rem;
+  font-size: 20px;
   max-width: 858px;
   line-height: 1.3;
   margin-top: 2rem;
 }
+.con-content-block .conWhy .conText ul {
+  margin: 0;
+  font-size: 20px;
+}
+.con-content-block .conWhy .conText ul li {
+  margin: 0;
+  font-size: inherit;
+}
+
 @media screen and (min-width: 480px) {
 }
 @media screen and (min-width: 576px) {

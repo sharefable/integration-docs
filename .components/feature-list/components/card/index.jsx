@@ -16,7 +16,7 @@ const Card = ({ title, desc, url, buttonText, imgUrl, ...rest }) => {
         <div className="con-card-carousel__card-text">
           <h3 className="con-card-carousel__card-text-title">{title}</h3>
           <p className="con-card-carousel__card-text-para">{desc}</p>
-          {url && (
+          {buttonText && (
             <a href={url} className="con-card-carousel__card-text-link">
               {buttonText}
             </a>

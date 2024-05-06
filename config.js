@@ -146,7 +146,7 @@ module.exports = {
           url: "https://app.sharefable.com/login",
         },
         {
-          type: "primary",
+          type: "secondary",
           title: "Get a demo",
           url: "https://sharefable.com/get-a-demo",
         },
