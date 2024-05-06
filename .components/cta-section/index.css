@@ -24,6 +24,7 @@
   border: 6px solid #1500e0;
   border-radius: 3rem;
   display: flex;
+  flex-direction: column;
   background-color: #fbf6ff;
 
   .conLeft {
@@ -32,19 +33,19 @@
     border-radius: 3rem;
     height: 100%;
     margin: -6px;
-    padding: 4rem 4rem;
+    padding: 2rem;
     background-color: white;
 
     .conText {
       .title {
-        font-size: 3.5rem;
+        font-size: 2.25rem;
         color: #1e293b;
         font-weight: 500;
         line-height: 1.2;
       }
 
       .desc {
-        font-size: 1.25rem;
+        font-size: 1rem;
         margin-top: 2rem;
         line-height: 1.4;
         color: #1e293b;
@@ -120,4 +121,33 @@
 }
 .form-input input:focus + label {
   color: blue;
+}
+
+@media screen and (min-width: 768px) {
+  .cta-section .conCTA {
+    flex-direction: row;
+
+    .conLeft {
+      height: 100%;
+      padding: 4rem;
+
+      .conText {
+        .title {
+          font-size: 3.5rem;
+        }
+
+        .desc {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+
+  .cta-section .conCTA .conLeft {
+    padding: 4rem 2rem;
+  }
+
+  .cta-section .conCTA .conRight {
+    padding: 4rem 2rem;
+  }
 }
