@@ -1,6 +1,7 @@
 .container .conHero {
   padding: 9rem 0 4rem 0;
   background: #fff;
+  overflow: hidden;
 }
 
 .container .conHero .heading-con {
