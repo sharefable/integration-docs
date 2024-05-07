@@ -32,12 +32,14 @@ const Carousel = (props) => {
       </div>
       <div className="conCards">
         <div className="cards">
-          <button onClick={prev} className="navigate-btn left">
-            <img
-              src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png"
-              alt="left"
-            />
-          </button>
+          {props.features.length > 1 && (
+            <button onClick={prev} className="navigate-btn left">
+              <img
+                src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png"
+                alt="left"
+              />
+            </button>
+          )}
           {props.features.map(
             ({ title, imgUrl, desc, url, buttonText }, idx) => (
               <Card
@@ -50,25 +52,28 @@ const Carousel = (props) => {
                 imgUrl={imgUrl}
                 desc={desc}
                 url={url}
-                buttonText={buttonText || "Learn more"}
+                buttonText={buttonText}
               />
             ),
           )}
           <div className="navigate-con">
-            {props.features.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentCard(index)}
-                className={`navigate-circles ${currentCard === index ? "active" : ""}`}
-              ></button>
-            ))}
+            {props.features.length > 1 &&
+              props.features.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentCard(index)}
+                  className={`navigate-circles ${currentCard === index ? "active" : ""}`}
+                ></button>
+              ))}
           </div>
-          <button onClick={next} className="navigate-btn right">
-            <img
-              src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png"
-              alt="right"
-            />
-          </button>
+          {props.features.length > 1 && (
+            <button onClick={next} className="navigate-btn right">
+              <img
+                src="https://www.iconpacks.net/icons/2/free-arrow-left-icon-3099-thumb.png"
+                alt="right"
+              />
+            </button>
+          )}
         </div>
       </div>
     </div>
