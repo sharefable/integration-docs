@@ -2,6 +2,8 @@
   padding: 9rem 0 4rem 0;
   background: #fff;
   overflow: hidden;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .container .conHero .heading-con {
@@ -102,12 +104,12 @@
   position: relative;
 }
 .container__hero > *:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 0rem;
 }
 .container__hero-desc {
   padding: 0 0.4rem;
   line-height: 1.6rem;
-  font-size: 1;
+  font-size: 1rem;
   letter-spacing: 0.6px;
   text-align: center;
   max-width: none;
@@ -135,13 +137,20 @@
 }
 
 @media screen and (min-width: 480px) {
-  .container .conHero .heading {
-    font-size: 3.125rem;
-  }
 }
 @media screen and (min-width: 576px) {
 }
 @media screen and (min-width: 768px) {
+  .container__hero > *:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .container .conHero .heading {
+    font-size: 3.25rem;
+  }
+  .container .conHero {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 @media screen and (min-width: 992px) {
   .container .conHero .heading {
